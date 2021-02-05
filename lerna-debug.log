@@ -1,0 +1,12 @@
+0 silly argv { _: [ 'init' ], lernaVersion: '3.22.1', '$0': 'lerna' }
+1 notice cli v3.22.1
+2 verbose rootPath /Users/sec/Documents/work/multi-webpack
+3 verbose init skipping validations
+4 verbose init skipping preparations
+5 info Initializing Git repository
+6 error Error: Command failed: git init
+6 error
+6 error You have not agreed to the Xcode license agreements, please run 'sudo xcodebuild -license' from within a Terminal window to review and agree to the Xcode license agreements.
+6 error
+6 error     at makeError (/Users/sec/Documents/work/multi-webpack/node_modules/execa/index.js:174:9)
+6 error     at /Users/sec/Documents/work/multi-webpack/node_modules/execa/index.js:278:16
