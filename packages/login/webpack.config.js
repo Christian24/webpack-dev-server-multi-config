@@ -8,6 +8,8 @@ module.exports = {
         path: __dirname + '/dist',
         publicPath: '/login'
     },
+
+    // This only is supposed to exist once.
     devServer: {
         proxy: {
           
@@ -19,6 +21,5 @@ module.exports = {
           }
         }
       },
-    
     plugins: [new HtmlWebpackPlugin({template: path.resolve(__dirname, 'index.html')})]
 }
