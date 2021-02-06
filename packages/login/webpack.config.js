@@ -8,6 +8,17 @@ module.exports = {
         path: __dirname + '/dist',
         publicPath: '/login'
     },
+    devServer: {
+        proxy: {
+          
+          "/api": {
+            target: "https://picsum.photos/",
+            secure: false,
+            "changeOrigin": true,
+            pathRewrite: {"^/api" : ""},
+          }
+        }
+      },
     
     plugins: [new HtmlWebpackPlugin({template: path.resolve(__dirname, 'index.html')})]
 }
